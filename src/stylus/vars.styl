@@ -1,0 +1,46 @@
+py(pd)
+	padding-top pd
+	padding-bottom pd
+
+px(pd)
+	padding-left pd
+	padding-right pd
+
+p(py, px = py)
+	padding py px
+
+mx(md)
+	margin-left md
+	margin-right md
+
+my(md)
+	margin-top md
+	margin-bottom md
+
+m(py, px = py)
+	margin py px
+
+wrap(width = 1200px, paddingd = 30px)
+	margin-left auto
+	margin-right auto
+	padding-left paddingd
+	padding-right paddingd
+	max-width width
+	width 100%
+
+bgimg()
+	object-fit cover
+	object-position center
+	absolute left 0 top 0
+	size 100%
+	display block
+
+placeholder(color)
+	&::-webkit-input-placeholder
+		color color
+	&::-moz-placeholder
+		color color
+	&:-ms-input-placeholder
+		color color
+	&:-moz-placeholder
+		color color
