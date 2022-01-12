@@ -1,6 +1,6 @@
 <template lang="pug">
   .page
-    page-section(v-for="section in sections" :name="section")
+    page-section(v-for="section in sections" :name="section" :key="section")
 </template>
 
 <script>

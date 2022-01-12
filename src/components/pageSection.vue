@@ -1,5 +1,5 @@
 <template lang="pug">
-  .section(v-if="name")
+  .section(v-if="name" :class="cls")
     component(:is="comp" )
 </template>
 
@@ -12,6 +12,9 @@ export default {
   },
   props: {
     name: {
+      type: String
+    },
+    cls: {
       type: String
     }
   },

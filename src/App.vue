@@ -12,3 +12,10 @@ export default {
   components: { frameHead, frameFooter }
 }
 </script>
+
+<style lang="stylus" scoped>
+.g
+  display flex
+  flex-direction column
+  min-height 100vh
+</style>
